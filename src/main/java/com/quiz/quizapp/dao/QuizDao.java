@@ -1,0 +1,10 @@
+package com.quiz.quizapp.dao;
+
+import com.quiz.quizapp.model.Quiz;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface QuizDao extends JpaRepository<Quiz, Integer> {
+
+
+    Quiz findByTitle(String string);
+}
